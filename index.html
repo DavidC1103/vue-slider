@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Slider VUE</title>
 </head>
 <body>
-    <div id="app">
+    <main>
+        <div id="app">
 
-    </div>
+                <div class="slide">
 
-    <script src="js/script.js"></script>
+                
+                    <div class="btn next">&rarr;</div>
+                    <div class="btn pre">&larr;</div>
+                
+                    <img :src="image[counter]" alt="'Image'">
+                </div>
+                   
+        </div>
+    </main>
+
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>
