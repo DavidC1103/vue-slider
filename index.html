@@ -15,10 +15,10 @@
                 <div class="slide">
 
                 
-                    <div class="btn next">&rarr;</div>
-                    <div class="btn pre">&larr;</div>
+                    <div @click="nextPre(false)" class="btn pre">&larr;</div>
+                    <div @click="nextPre(true)" class="btn next" >&rarr;</div>
                 
-                    <img :src="image[counter]" alt="'Image'">
+                    <img :src="image[counter]" alt="">
                 </div>
                    
         </div>
